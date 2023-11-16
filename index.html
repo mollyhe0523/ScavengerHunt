@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <script type="text/javascript">
+        function random_4(){
+            var myrandom=Math.floor(Math.random()*4)
+            var link1="http://www.apple.com"
+            var link2="http://www.meta.com"
+            var link3="http://www.amazon.com"
+            var link4="http://www.google.com"
+
+            if (myrandom==0)
+                window.location=link1
+            else if (myrandom==1)
+                window.location=link2
+            else if (myrandom==2)
+                window.location=link3
+            else if (myrandom==3)
+                window.location=link4
+        }
+    </script>
+</head>
+<body>
+    <form>
+    <input type="button" value="Let's go!!!" onClick="random_4()">
+    </form>
+</body>
+</html>
+
