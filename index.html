@@ -4,7 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
+    <title>Scavenger hunt landing page</title>
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* This makes the container take the full height of the viewport */
+        }
+        .button-5 {
+            align-items: center;
+            background-clip: padding-box;
+            background-color: #fa6400;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 20px; /* Increased font size */
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 4rem; /* Increased minimum height */
+            padding: 1rem 2rem; /* Increased padding */
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        .button-5:hover,
+        .button-5:focus {
+            background-color: #fb8332;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+        }
+
+        .button-5:hover {
+            transform: translateY(-1px);
+        }
+
+        .button-5:active {
+            background-color: #c85000;
+            box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+            transform: translateY(0);
+        }
+
+    </style>
     <script type="text/javascript">
         function random_4(){
             var myrandom=Math.floor(Math.random()*4)
@@ -25,9 +78,13 @@
     </script>
 </head>
 <body>
-    <form>
-    <input type="button" value="Let's go!!!" onClick="random_4()">
-    </form>
+    <div class="button-container">
+
+        <form>
+        <input class="button-5" type="button" value="Let's go!!!" onClick="random_4()">
+        </form>
+
+    </div>
 </body>
 </html>
 
